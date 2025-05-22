@@ -19,4 +19,4 @@ width = 5
 area = length * width
 
 if __name__ == "__main__":
-    print("The area of the rectangle is: 50")
+    print(f"The area of the rectangle is: {area}")
