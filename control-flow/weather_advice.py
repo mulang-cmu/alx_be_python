@@ -18,20 +18,18 @@ Task Description:
 # A function (Using match cases)that recommends weather clothing based on user input
 def recommend_wather_clothig():
     weather = input("What's the weather like today? (sunny/rainy/cold): ").lower()
+    
     if weather == "sunny":
-        recommend = "Wear a t-shirt and sunglasses."
+        print("Wear a t-shirt and sunglasses.")
     elif weather == "rainy":
-        recommend = "Don't forget your umbrella and a raincoat."
+        print("Don't forget your umbrella and a raincoat.")
     elif weather == "cold":
-        recommend = "Make sure to wear a warm coat and a scarf."
+        print("Make sure to wear a warm coat and a scarf.")
     else:
         print("Sorry, I don't have recommendations for this weather.")
-        return
-
-    return(recommend)
-
+        
 if __name__ == "__main__":
-    print(recommend_wather_clothig())
+    recommend_wather_clothig()
 
 
 
