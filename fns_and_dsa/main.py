@@ -4,17 +4,17 @@ from shopping_list_manager import display_menu, add_item, remove_item, view_list
 def main():
     while True:
         display_menu()
-        choice = input("Enter your choice (1-4): ").strip()
+        choice = input("Enter your choice (1-4): ")#.strip()
 
         if choice == '1':
-            item = input("Enter the item to add: ").strip()
+            item = input("Enter the item to add: ")#.strip()
             if item:
                 add_item(item)
             else:
                 print("Item cannot be empty!")
 
         elif choice == '2':
-            item = input("Enter the item to remove: ").strip()
+            item = input("Enter the item to remove: ")#.strip()
             if item:
                 remove_item(item)
             else:
