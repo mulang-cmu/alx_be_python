@@ -21,11 +21,12 @@ Based on the user’s input, call the appropriate conversion function and displa
 If gthe user entered a wrong input,raise an error “Invalid temperature. Please enter a numeric value.”
 Guidance:
 Remember to access global variables using the global keyword if you need to modify them inside functions. However, for this task, you’ll only be reading their values.
-Use input validation to ensure that the user enters a valid temperature and unit."""
+Use input validation to ensure that the user enters a valid temperature and unit.
+"""
 
 # Global conversion factors
-FAHRENHEIT_TO_CELSIUS_FACTOR = 5 / 9
-CELSIUS_TO_FAHRENHEIT_FACTOR = 9 / 5
+FAHRENHEIT_TO_CELSIUS_FACTOR = 5/9
+CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5
 
 def convert_to_celsius(fahrenheit):
     """Convert Fahrenheit to Celsius."""
@@ -37,23 +38,19 @@ def convert_to_fahrenheit(celsius):
 
 def main():
     try:
-        # Get the temperature value
         temp_input = input("Enter the temperature to convert: ")
         temperature = float(temp_input)
 
-        # Get the unit (C or F)
         unit = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").strip().upper()
 
-        # Perform conversion
         if unit == 'F':
-            converted = convert_to_celsius(temperature)
-            print(f"{temperature}°F is {converted}°C")
+            result = convert_to_celsius(temperature)
+            print(f"{temperature}°F is {result}°C")
         elif unit == 'C':
-            converted = convert_to_fahrenheit(temperature)
-            print(f"{temperature}°C is {converted}°F")
+            result = convert_to_fahrenheit(temperature)
+            print(f"{temperature}°C is {result}°F")
         else:
             print("Invalid unit. Please enter 'C' for Celsius or 'F' for Fahrenheit.")
-
     except ValueError:
         raise ValueError("Invalid temperature. Please enter a numeric value.")
 
