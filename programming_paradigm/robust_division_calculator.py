@@ -30,6 +30,6 @@ def safe_divide(numerator, denominator):
         return "Error: Cannot divide by zero."
 
     else:
-        return  nume / denom
+        return  f"The result of the division is {nume / denom:.1f}"
 
 

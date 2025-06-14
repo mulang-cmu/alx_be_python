@@ -32,7 +32,7 @@ monthly_income = int(input("Enter your monthly income: "))
 monthly_expenses = int(input("Enter your total monthly expenses: "))
 
 # Calculate monthly savings
-monthly_savings = monthly_income - monthly_expenses
+monthly_savings = monthly_income - mopython versionnthly_expenses
 
 # Project Annual Savings:
 projected_savings = (monthly_savings * 12) + int((monthly_savings * 12 * 0.05))
