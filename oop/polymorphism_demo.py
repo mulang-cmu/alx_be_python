@@ -34,12 +34,12 @@ class Shape(ABC):
         pass
 
 class Rectangle(Shape):
-    def __init__(self, lenth, width):
-        self.lenth = lenth
+    def __init__(self, length, width):
+        self.length = length
         self.width = width
 
     def area(self):
-        return self.lenth * self.width
+        return self.length * self.width
 
 class Circle(Shape):
     pi = math.pi
